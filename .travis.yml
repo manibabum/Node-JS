@@ -8,15 +8,3 @@ env:
 
 script:
 - sonar-scanner
-cache:
-directories:
-- '$HOME/.sonar/cache'
-
-sonar-project.properties
-sonar.projectKey=czechsource:reactBlog
-sonar.projectName=React.js blog
-sonar.projectVersion=1.0
-sonar.sources=src
-sonar.language=js
-sonar.sourceEncoding=UTF-8
-sonar.branch=develop,master
