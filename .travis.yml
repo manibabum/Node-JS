@@ -5,3 +5,16 @@ env:
 - MY_VAR=EverythignIsAwesome
 - NODE_ENV=TEST
 - secure: "TsYgfDTXM9DhteoxruftAIm9qbcVFTfBbPmi/Mv9lGkDKZ/b4pputXgbfy2On7dsu5s9Bio/P4Nri61sgVHZm6AJIsNWf2D6Ggiz94oddr0r+7dPp9yqTziPQAKNmMSzCtLff9Dl4BSOiasy/aQy5M+NrD6kXex0xjZyTIEndzk="
+
+
+
+script: 
+
+'azure site deploymentscript -y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"'.
+
+deploy:
+  provider: azure_web_apps
+  username: manibabu.muddapu01@gmail.com       # If AZURE_WA_USERNAME isn't set
+  password: manemagee@1   # If AZURE_WA_PASSWORD isn't set
+  site: https://manibabu.azurewebsites.net       # If AZURE_WA_SITE isn't set
+  slot: azure_deployment_slotname       # (optional) If AZURE_WA_SLOT isn't set
