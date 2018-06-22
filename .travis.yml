@@ -8,9 +8,6 @@ env:
 
 
 
-script: 
-
-'azure site deploymentscript -y --no-dot-deployment -r "D:\home\site\repository" -o "D:\home\site\deployments\tools" --node --sitePath "D:\home\site\repository"'.
 
 deploy:
   provider: azure_web_apps
