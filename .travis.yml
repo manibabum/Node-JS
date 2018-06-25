@@ -15,6 +15,7 @@ addons:
 script:
  
   - sonar-scanner
+  - sonar-scanner -Dsonar.login=38e2c6ff14510f886cff64ee04018243bbae3118
 
 
 deploy:
