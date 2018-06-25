@@ -15,6 +15,9 @@ env:
 script:
  
   - sonar-scanner
+branches:
+    - sonarqube
+    - master
 
 
 deploy:
