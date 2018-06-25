@@ -6,7 +6,14 @@ env:
 - NODE_ENV=TEST
 - secure: "TsYgfDTXM9DhteoxruftAIm9qbcVFTfBbPmi/Mv9lGkDKZ/b4pputXgbfy2On7dsu5s9Bio/P4Nri61sgVHZm6AJIsNWf2D6Ggiz94oddr0r+7dPp9yqTziPQAKNmMSzCtLff9Dl4BSOiasy/aQy5M+NrD6kXex0xjZyTIEndzk="
 
-
+addons:
+  sonarqube: true
+env:
+  SONAR_TOKEN: 77964016ad19da51062ec6b0ed5007cc6299d087
+ 
+script:
+  # other script steps might be done before running the actual SonarQube analysis
+  - sonar-scanner -Dsonar.login=77964016ad19da51062ec6b0ed5007cc6299d087
 
 
 deploy:
