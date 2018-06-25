@@ -13,8 +13,8 @@ env:
   SONAR_TOKEN: 77964016ad19da51062ec6b0ed5007cc6299d087
  
 script:
-  # other script steps might be done before running the actual SonarQube analysis
-  - sonar-scanner -Dsonar.login=77964016ad19da51062ec6b0ed5007cc6299d087
+ 
+  - sonar-scanner
 
 
 deploy:
