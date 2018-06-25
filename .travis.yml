@@ -4,13 +4,13 @@ node_js:
 env:
 - MY_VAR=EverythignIsAwesome
 - NODE_ENV=TEST
-- Organization: "manibabum-github" 
-- secure: "38e2c6ff14510f886cff64ee04018243bbae3118"
+
 
 addons:
-  sonarqube: true
-env:
-  SONAR_TOKEN: 77964016ad19da51062ec6b0ed5007cc6299d087
+  sonarcloud:
+  Organization: "manibabum-github" 
+  secure: "38e2c6ff14510f886cff64ee04018243bbae3118"
+
  
 script:
  
