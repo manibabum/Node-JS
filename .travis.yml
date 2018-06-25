@@ -15,9 +15,7 @@ env:
 script:
  
   - sonar-scanner
-branches:
-    - sonarqube
-    - master
+  - sonar.branch=develop
 
 
 deploy:
