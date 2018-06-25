@@ -4,18 +4,17 @@ node_js:
 env:
 - MY_VAR=EverythignIsAwesome
 - NODE_ENV=TEST
-
+- Organization: "manibabum-github" 
+- secure: "38e2c6ff14510f886cff64ee04018243bbae3118"
 
 addons:
-  sonarcloud:
-  Organization: "manibabum-github" 
-  secure: "38e2c6ff14510f886cff64ee04018243bbae3118"
-
+  sonarqube: true
+env:
+  SONAR_TOKEN: 38e2c6ff14510f886cff64ee04018243bbae3118
  
 script:
  
   - sonar-scanner
- 
 
 
 deploy:
