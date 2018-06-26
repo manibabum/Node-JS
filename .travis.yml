@@ -9,13 +9,7 @@ env:
 
 addons:
   sonarqube: true
-env:
-  SONAR_TOKEN: 38e2c6ff14510f886cff64ee04018243bbae3118
- 
-script:
- 
-  - sonar-scanner
-  - sonar.branch=develop
+
 
 
 deploy:
