@@ -2,15 +2,8 @@ language: node_js
 node_js:
  - "node"
 env:
-- MY_VAR=EverythignIsAwesome
+
 - NODE_ENV=TEST
-- Organization: "manibabum-github" 
-- secure: "38e2c6ff14510f886cff64ee04018243bbae3118"
-
-addons:
-  sonarqube: true
-
-
 
 deploy:
   provider: azure_web_apps
